@@ -1,3 +1,0 @@
-En base a la actividad anterior, ahora iseñaras y desarrollaroas una app movil para smartwatch
-
-La funcion principal sera mostrar una galeria de imagenes permitiendo al usuario deslizar o navegar entre ellas
