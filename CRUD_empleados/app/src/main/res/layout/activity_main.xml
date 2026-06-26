@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empleado"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/etPuesto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Puesto"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/etSueldo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sueldo"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/btnAlta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="4dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#CCCCCC"
+        android:layout_marginVertical="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Busqueda"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <EditText
+            android:id="@+id/etBuscarId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="ID Empleado"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:backgroundTint="#2196F3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnEditar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Actualizar"
+            android:backgroundTint="#FF9800"
+            android:layout_marginRight="4dp"/>
+
+        <Button
+            android:id="@+id/btnBaja"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Borrar"
+            android:backgroundTint="#E91E63"
+            android:layout_marginLeft="4dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#CCCCCC"
+        android:layout_marginVertical="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empleados Registrados"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <ListView
+        android:id="@+id/lvEmpleados"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
